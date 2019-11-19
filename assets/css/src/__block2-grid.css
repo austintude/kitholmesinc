@@ -1,0 +1,7 @@
+
+@supports (grid-area:auto){
+		.block2 {
+		display: grid;
+
+	}
+}

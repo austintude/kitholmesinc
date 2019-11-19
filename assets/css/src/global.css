@@ -25,6 +25,14 @@
 @import "_typography.css";
 @import "_elements.css";
 @import "_links.css";
+@import "_theme-specific-mods.css";
+@import "_block1.css";
+@import "_block2.css";
+@import "_block3.css";
+@import "_block4.css";
+@import "__onethreewrapper.css";
+@import "__contentmiddleblock.css";
+@import "_supports.css";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -202,14 +210,14 @@ select {
 	padding-bottom: 1em;
 }
 
-.header-image {
+/* .header-image {
 	margin: 0 auto;
-}
+} */
 
-.header-image img {
+/* .header-image img {
 	display: block;
 	margin: 0 auto;
-}
+} */
 
 .custom-logo-link {
 	display: inline-block;
@@ -218,7 +226,7 @@ select {
 
 .site-branding {
 	text-align: center;
-	padding: 60px 0 1.75em;
+	/* padding: 60px 0 1.75em; */
 }
 
 .site-title {

@@ -1,0 +1,12 @@
+
+@supports (grid-area:auto){
+	.onethreewrapper {
+		display: grid;
+		& .leftOneThirdBlock {
+		& img {
+		}
+	}
+	& .rightTwoThirdsBlock {
+	}
+	}
+}
