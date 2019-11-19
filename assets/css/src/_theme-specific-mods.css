@@ -108,3 +108,23 @@ body {
 	}
 }
 
+amp-lightbox {
+	background: rgba(0,0,0,.65);
+
+	& .lightbox {
+		background: rgba(0,0,0,.8);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 20vh;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& amp-youtube {
+			background: rgba(255, 255, 255, 0.9);
+		}
+	}
+	}
