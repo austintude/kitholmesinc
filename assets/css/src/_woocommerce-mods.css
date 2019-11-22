@@ -17,5 +17,10 @@
 	& ul.products[class*=columns-] li.product {
 		width: 100%;
 	}
-
+	& a,
+	& a:hover,
+	& a:visited {
+		color: rgba(20,20,200,1);
+		text-decoration: none;
+	}
 }
