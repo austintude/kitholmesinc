@@ -33,6 +33,8 @@
 @import "__onethreewrapper.css";
 @import "__contentmiddleblock.css";
 @import "__carouselBlock.css";
+@import "_woocommerce-mods.css";
+@import "_footer-block1.css";
 @import "_supports.css";
 
 /*--------------------------------------------------------------
@@ -576,10 +578,11 @@ select {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 1em 0 0;
+	margin: 0 0 -1em;
 	padding: 2em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	background: rgba(255,255,255,.8);
 }
 
 .site-info {

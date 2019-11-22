@@ -71,8 +71,14 @@ body {
     top: 3em;
     right: 0;
     position: fixed;
-    background: hsla(0,0%,100%,.9);
-    z-index: 6;
+    background: hsla(0,0%,100%,.95);
+	z-index: 6;
+
+	& .primary-menu-container {
+		position: relative;
+		max-width: 60vw;
+		top: .5rem;
+	}
 }
 .main-navigation a {
     display: block;
@@ -128,3 +134,24 @@ amp-lightbox {
 		}
 	}
 	}
+	.primary-sidebar {
+		& a,
+		& a:hover,
+		& a:visited {
+		color: #222;
+	}
+	}
+
+.site-footer {
+	& .site-info {
+	color: rgba(0,0,0,.7);
+	font-size: .7rem;
+	& a,
+	& a:hover,
+	& a:visited {
+		text-decoration: none;
+		color: rgba(0,0,0,.4);
+	}
+}
+
+}

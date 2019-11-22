@@ -15,4 +15,10 @@
 		background-image: linear-gradient(1deg,#fcc653 0%,#fcc653 100%)!important;
 		background-color: #fcd176;
 	}
+	& .ctaButton a {
+		background: transparent;
+		border-radius: 0;
+		padding: 0;
+		cursor: grab;
+	}
 }

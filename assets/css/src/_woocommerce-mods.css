@@ -1,0 +1,21 @@
+.woocommerce-page {
+	& span.posted-by {
+    	display: none;
+	}
+	& .woocommerce .products ul,
+	& .woocommerce ul.products {
+		margin: 0 auto 1em;
+		padding: 0;
+		list-style: none outside;
+		clear: both;
+		width: 48vw;
+		& .woocommerce-loop-product__title {
+			color: #222;
+		}
+	}
+	& .woocommerce ul.products[class*=columns-] li.product,
+	& ul.products[class*=columns-] li.product {
+		width: 100%;
+	}
+
+}

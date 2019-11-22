@@ -42,13 +42,13 @@ autoplay
 </amp-lightbox>
 <amp-img
       src="https://i.ytimg.com/vi/<?php echo $youtube_video_id; ?>/hqdefault.jpg"
-      width="60"
-      height="40"
+      width="90"
+      height="60"
 	  alt="Youtube video - <?php echo $youtube_video_id; ?>"
 	  role="button"
 	  tabindex="0"
 	  on="tap:<?php echo $youtube_video_id; ?>-lightbox"
-	  layout="responsiv"
+	  layout="intrinsic"
     ></amp-img>
   <?php endwhile; ?>
 
