@@ -67,7 +67,7 @@ $contact_us_phone			= get_field('contact_us_phone');
 			</ul>
 
         </div>
-        <div id="googleMap">
+        <!-- <div id="googleMap">
         <amp-iframe width="600" height="450" layout="responsive"
 			  sandbox="allow-scripts allow-same-origin allow-popups"
 			  frameborder="0"
@@ -77,7 +77,7 @@ $contact_us_phone			= get_field('contact_us_phone');
 			 placeholder>
 			</amp-img>
   </amp-iframe>
-</div>
+</div> -->
 </div>
 <div class="rightBlock">
     <h4> Contact Us</h4>

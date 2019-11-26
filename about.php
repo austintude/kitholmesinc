@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Custom Page Template
+ * Template Name: About Page Template
  *
  * When active, by adding the heading above and providing a custom name
  * this template becomes available in a drop-down panel in the editor.

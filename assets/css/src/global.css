@@ -32,9 +32,15 @@
 @import "_block4.css";
 @import "__onethreewrapper.css";
 @import "__contentmiddleblock.css";
+@import "__contentmiddleblock2.css";
 @import "__carouselBlock.css";
 @import "_woocommerce-mods.css";
+@import "_about-mods.css";
+@import "_blog-mods.css";
+@import "_contact-mods.css";
 @import "_footer-block1.css";
+@import "_press-template.css";
+@import "_product-line-template.css";
 @import "_supports.css";
 
 /*--------------------------------------------------------------

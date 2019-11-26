@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Custom Page Template
+ * Template Name: Press Page Template
  *
  * When active, by adding the heading above and providing a custom name
  * this template becomes available in a drop-down panel in the editor.
@@ -20,16 +20,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
 	<main id="primary" class="site-main">
-		<?php
 
-		while ( have_posts() ) {
-			the_post();
-
-			the_content();
-		}
-
-		?>
+	<?php get_template_part( 'template-parts/content/_press' ); ?>
 	</main><!-- #primary -->
-	<?php get_template_part( 'template-parts/content/ctaBlock' ); ?>
 <?php
 get_footer();

@@ -7,7 +7,7 @@
 
 namespace WP_Rig\WP_Rig;
 
-if ( ! has_header_image() ) {
+if ( ! the_header_image_tag() ) {
 	return;
 }
 

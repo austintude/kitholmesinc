@@ -6,74 +6,88 @@
  */
 
 namespace WP_Rig\WP_Rig;
-$contact_form				= get_field('contact_form');
-$contact_amp_iframe_placeholder				= get_field('contact_amp_iframe_placeholder');
+$top_block_phone_num				= get_field('top_block_phone_num');
+$top_block_title				= get_field('top_block_title');
+$top_block_phone_link				= get_field('top_block_phone_link');
+$mid_block_title				= get_field('mid_block_title');
+$mid_block_btn				= get_field('mid_block_btn');
+$mid_block_form_url				= get_field('mid_block_form_url');
+$btm_block_title				= get_field('btm_block_title');
+$btm_block_btn				= get_field('btm_block_btn');
+$contact_kit_title				= get_field('contact_kit_title');
+$contact_kit_btn				= get_field('contact_kit_btn');
+$contact_kit_form_url				= get_field('contact_kit_form_url');
+$cta_loading_image				= get_field('cta_loading_image');
 
 ?>
 
-<div id="ctaBlock">
-	<div class="contactForm">
-		<a href="tel:3102134090" rel="noreferrer noopenner"><h3>Call Us Today - (310) 213-4090</h3></a>
-		<h3>Bring your vehicle in for a FREE repair estimate today</h3>
-		<h3>Buying a used vehicle? Bring it in for a FREE inspection BEFORE you buy.</h3>
-			<h3>Email Us</h3>
-			<amp-iframe 
-				width="360" 
-				height="360" 
-				layout="fixed" 
-				sandbox="allow-scripts allow-same-origin allow-popups" 
-				frameborder="0" 
-				src="<?php echo $contact_form; ?>"
-				media="(max-width: 43.5em) and (min-height:27em)"
-				>
-				<amp-img layout="fill"
-					src="<?php echo $contact_amp_iframe_placeholder['url']; ?>"
-					placeholder>
-				</amp-img>
-			</amp-iframe>
-			<amp-iframe 
-				width="580" 
-				height="310" 
-				layout="fixed" 
-				sandbox="allow-scripts allow-same-origin allow-popups" 
-				frameborder="0" 
-				src="<?php echo $contact_form; ?>"
-				media="(max-width: 43.5em) and (max-height:26em)"
-				>
-				<amp-img layout="fill"
-					src="<?php echo $contact_amp_iframe_placeholder['url']; ?>"
-					placeholder>
-				</amp-img>
-			</amp-iframe>
-			<amp-iframe 
-				width="610" 
-				height="310" 
-				layout="fixed" 
-				sandbox="allow-scripts allow-same-origin allow-popups" 
-				frameborder="0" 
-				src="<?php echo $contact_form; ?>"
-				media="(min-width: 43.6em) and (min-height:27em) and (max-width: 48.5em)"
-				>
-				<amp-img layout="fill"
-					src="<?php echo $contact_amp_iframe_placeholder['url']; ?>"
-					placeholder>
-				</amp-img>
-			</amp-iframe>
-			<amp-iframe 
-				width="610" 
-				height="350" 
-				layout="fixed" 
-				sandbox="allow-scripts allow-same-origin allow-popups" 
-				frameborder="0" 
-				src="<?php echo $contact_form; ?>"
-				media="(min-width: 48.6em)"
-				>
-				<amp-img layout="fill"
-					src="<?php echo $contact_amp_iframe_placeholder['url']; ?>"
-					placeholder>
-				</amp-img>
-			</amp-iframe>
-  
-	</div>
+<div class="contactBlock">
+	<div class="topBlock">
+		<h2>
+			<?php echo $top_block_title; ?>
+		</h2>
+		<h3>
+			<a href="tel:<?php echo $top_block_phone_link; ?>" rel="noreferrer noopenner">
+				<?php echo $top_block_phone_num; ?>
+			</a>
+		</h3>
+
+	</div><!-- end .topBlock -->
+	<div class="midBlock">
+		<h2>
+			<?php echo $mid_block_title; ?>
+		</h2>
+		<button id="speaking" class="btn btn-lg btn-danger" on="tap:speaking-lightbox" role="button" tabindex="0"><?php echo $mid_block_btn; ?> »</button>
+		<amp-lightbox id="speaking-lightbox" layout="nodisplay">
+    <div class="lightbox" on="tap:speaking-lightbox.close" role="button" tabindex="0">
+
+      <amp-iframe width="350" height="550" layout="intrinsic"
+              sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0"
+              src="<?php echo $mid_block_form_url; ?>">
+    <amp-img layout="fill"
+             src="<?php echo $cta_loading_image['url']; ?>"
+             placeholder></amp-img>
+  </amp-iframe>
+    </div>
+  </amp-lightbox>
+	</div><!-- end .midBlock -->
+	<div class="btmBlock">
+		<h2>
+			<?php echo $btm_block_title; ?>
+		</h2>
+		<button id="singing" class="btn btn-lg btn-danger" on="tap:singing-lightbox" role="button" tabindex="0"><?php echo $btm_block_btn; ?> »</button>
+		<amp-lightbox id="singing-lightbox" layout="nodisplay">
+    <div class="lightbox" on="tap:singing-lightbox.close" role="button" tabindex="0">
+
+      <amp-iframe width="350" height="550" layout="intrinsic"
+              sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0"
+              src="<?php echo $btm_block_form_url; ?>">
+    <amp-img layout="fill"
+             src="<?php echo $cta_loading_image['url']; ?>"
+             placeholder></amp-img>
+  </amp-iframe>
+    </div>
+  </amp-lightbox>
+
+	</div><!-- end .lowerBlock -->
+	<div class="btmBlock">
+	<h2>
+			<?php echo $contact_kit_title; ?>
+		</h2>
+		<button id="singing" class="btn btn-lg btn-danger" on="tap:singing-lightbox" role="button" tabindex="0"><?php echo $contact_kit_btn; ?> »</button>
+		<amp-lightbox id="singing-lightbox" layout="nodisplay">
+    <div class="lightbox" on="tap:singing-lightbox.close" role="button" tabindex="0">
+
+      <amp-iframe width="350" height="550" layout="intrinsic"
+              sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0"
+              src="<?php echo $contact_kit_form_url; ?>">
+    <amp-img layout="fill"
+             src="<?php echo $cta_loading_image['url']; ?>"
+             placeholder></amp-img>
+  </amp-iframe>
+    </div>
+  </amp-lightbox>
+
+	</div><!-- end .btmBlock -->
 </div>
 

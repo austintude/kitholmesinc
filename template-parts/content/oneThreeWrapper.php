@@ -22,9 +22,10 @@ $cta_loading_image			= get_field('cta_loading_image');
 			<?php echo $righttwothirdsblock; ?>
 			</div><!-- end .content -->
 		</div><!-- end .rightBlock -->
-	</div> <!-- end .wrapper -->
-	<div class="ctaButton">
+		<div class="ctaButton">
   <a href="<?php echo $cta_form_url; ?>">
   <button id="estimate" class="btn btn-lg btn-danger" role="button" tabindex="0"><?php echo $cta_text; ?> »</button>
 </a>
 	</div><!-- end .ctaButton -->
+	</div> <!-- end .wrapper -->
+

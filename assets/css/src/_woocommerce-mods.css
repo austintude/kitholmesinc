@@ -27,3 +27,10 @@
 		}
 	}
 }
+
+.page-template-__woocommerce.has-sidebar {
+	& .site {
+		grid-template-columns: 1fr;
+		margin: auto 5vw;
+	}
+}

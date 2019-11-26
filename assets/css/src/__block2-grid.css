@@ -2,6 +2,8 @@
 @supports (grid-area:auto){
 		.block2 {
 		display: grid;
-
+		@media (--content-query) {
+			padding: 0;
+		}
 	}
 }

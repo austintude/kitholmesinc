@@ -14,14 +14,14 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header('custom');
+get_header('about');
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
 	<main id="primary" class="site-main">
 
-	<?php get_template_part( 'template-parts/content/contactBlock' ); ?>
+	<?php get_template_part( 'template-parts/content/contact' ); ?>
 	</main><!-- #primary -->
 <?php
 get_footer();

@@ -14,7 +14,7 @@ $block3_cta_text	= get_field('block3_cta_text');
 $block3_cta_url	= get_field('block3_cta_url');
 
 ?>
-	<div class="contentMiddleBlock">
+	<div class="contentMiddleBlock2">
 		<div class="contentMiddleBlockTitle">
 			<?php echo $contentmiddleblock3title; ?>
 		</div><!-- end .contentMiddleBlockTitle -->

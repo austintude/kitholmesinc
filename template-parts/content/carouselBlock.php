@@ -41,9 +41,20 @@ autoplay
   </amp-youtube>
 </amp-lightbox>
 <amp-img
-      src="https://i.ytimg.com/vi/<?php echo $youtube_video_id; ?>/hqdefault.jpg"
+media="(max-width: 47.9em)"
+src="https://i.ytimg.com/vi/<?php echo $youtube_video_id; ?>/hqdefault.jpg"
       width="90"
       height="60"
+	  alt="Youtube video - <?php echo $youtube_video_id; ?>"
+	  role="button"
+	  tabindex="0"
+	  on="tap:<?php echo $youtube_video_id; ?>-lightbox"
+	  layout="intrinsic"
+    ></amp-img><amp-img
+media="(min-width: 48em)"
+src="https://i.ytimg.com/vi/<?php echo $youtube_video_id; ?>/hqdefault.jpg"
+      width="200"
+      height="120"
 	  alt="Youtube video - <?php echo $youtube_video_id; ?>"
 	  role="button"
 	  tabindex="0"

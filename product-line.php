@@ -14,16 +14,16 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header('custom');
+get_header('about');
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
 	<main id="primary" class="site-main">
-		<?php 
+		<?php
 			get_template_part( 'template-parts/content/productLine' );
 		?>
-		
+
 	</main><!-- #primary -->
 <?php
 get_footer();
