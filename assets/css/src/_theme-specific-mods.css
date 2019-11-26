@@ -13,6 +13,9 @@
     background: #f7f7f7;
     z-index: 15;
 }
+.site-header {
+	margin-top: 4rem;
+}
 .primary-menu-container {
     top: 1rem;
     position: fixed;
