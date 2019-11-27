@@ -27,5 +27,8 @@ namespace WP_Rig\WP_Rig;
 	</div>
 </div> <!-- end #carouselHero -->
 
-		<p class="site-title"><?php the_title(); ?></p>
+		<p class="site-title">
+			&nbsp;
+			<!-- <?php the_title(); ?> -->
+		</p>
 </div><!-- .site-branding -->
