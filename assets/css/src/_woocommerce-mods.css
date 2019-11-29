@@ -26,6 +26,9 @@
 			text-decoration: none;
 		}
 	}
+	.footerBlock2 {
+		display: none;
+	}
 }
 
 .page-template-__woocommerce.has-sidebar {
