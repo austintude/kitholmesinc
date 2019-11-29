@@ -30,6 +30,5 @@ wp_rig()->print_styles( 'wp-rig-content' );
 
 		?>
 	</main><!-- #primary -->
-	<?php get_template_part( 'template-parts/content/ctaBlock' ); ?>
 <?php
 get_footer();
