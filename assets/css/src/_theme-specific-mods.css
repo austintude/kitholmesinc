@@ -13,6 +13,9 @@
     background: #f7f7f7;
     z-index: 15;
 }
+#masthead img {
+	width: 100vw;
+}
 .site-header {
 	margin-top: 4rem;
 }
