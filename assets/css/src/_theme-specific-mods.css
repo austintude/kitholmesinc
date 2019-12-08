@@ -13,8 +13,16 @@
     background: #f7f7f7;
     z-index: 15;
 }
-#masthead img {
+#masthead {
+	& amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img {
+		object-fit: cover;
+	}
+	& amp-img {
 	width: 100vw;
+}
+	& img.custom-logo {
+		width: 6em;
+	}
 }
 .site-header {
 	margin-top: 4rem;

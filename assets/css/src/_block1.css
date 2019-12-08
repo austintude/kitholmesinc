@@ -6,7 +6,7 @@
 	&  h2 {
 		margin-left: 5vw;
 		border-bottom: 1px solid #333;
-		width: 5rem;
+		/* width: 5rem; */
 		padding-bottom: 1rem;
 	}
 	& button {
